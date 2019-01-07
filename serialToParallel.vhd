@@ -1,0 +1,101 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity serialToParallel is
+	port (	clk : in std_logic;
+		serial : in std_logic;
+		pClk : out std_logic;
+		parallel : out std_logic_vector(7 downto 0));
+
+end serialToParallel;
+
+architecture behav of serialToParallel is
+	signal temp : std_logic_vector(7 downto 0) := "00000000";
+	signal output : std_logic_vector(7 downto 0) := "00000000";
+	signal outClk : std_logic := '0';
+	signal count : integer range 0 to 16 := 0;
+
+begin
+	parallel <= output;
+	pClk <= outClk;
+	process (clk, serial)
+	begin
+		if clk = '1' then
+			temp <= temp(6 downto 0) & serial;
+			count <= count + 1;
+			outClk <= '0';
+			if count = 8 then
+				count <= 0;
+				output <= temp;
+				outClk <= '1';
+			end if;
+		end if;
+	end process;
+end behav;
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity serialToParallel_tb is
+end serialToParallel_tb;
+
+architecture TB_ARCHITECTURE of serialToParallel_tb is
+-- Component declaration of the tested unit
+component serialToParallel
+	port (	clk : in std_logic;
+		serial : in std_logic;
+		pClk : out std_logic;
+		parallel : out std_logic_vector(7 downto 0));
+end component;
+
+-- Stimulus signals - signals mapped to the input and inout ports of   tested entity
+signal serial : std_logic;
+signal parallel : std_logic_vector(7 downto 0);
+signal clk : std_logic;
+signal pClk : std_logic;
+
+constant clk_period:time :=10 ns;
+-- Observed signals - signals mapped to the output ports of tested entity
+
+begin
+-- Unit Under Test port map
+UUT : serialToParallel
+    port map (
+        serial => serial,
+        parallel => parallel,
+        clk => clk,
+        pClk => pClk
+    );
+
+clk_process :process
+begin
+    clk <= '0';
+    wait for clk_period/2;
+    clk <= '1';
+    wait for clk_period/2;
+end process;
+
+
+  -- Stimulus process
+  stim_proc: process
+  begin     
+    serial<='1';
+    wait for 10 ns; 
+    serial<='1';
+    wait for 10 ns; 
+    serial<='1';
+    wait for 10 ns; 
+    serial<='1';
+    wait for 10 ns; 
+    serial<='0';
+    wait for 10 ns; 
+    serial<='0';
+    wait for 10 ns; 
+    serial<='1';
+    wait for 10 ns; 
+    serial<='1';
+    wait for 10 ns; 
+end process;
+
+END;

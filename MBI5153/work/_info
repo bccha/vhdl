@@ -1,0 +1,148 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dP:/workspace
+Econtrolunit
+Z0 w1546874142
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dP:/workspace/MBI5153
+Z4 8P:/workspace/MBI5153/ControlUnit.vhd
+Z5 FP:/workspace/MBI5153/ControlUnit.vhd
+l0
+L4
+VlNZ3I``T`3bn@jX=H@e8=1
+!s100 ]<d0:nf21f7kKC>43OW5]1
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1546874147
+!i10b 1
+Z8 !s108 1546874147.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|P:/workspace/MBI5153/ControlUnit.vhd|
+Z10 !s107 P:/workspace/MBI5153/ControlUnit.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+DEx4 work 11 controlunit 0 22 lNZ3I``T`3bn@jX=H@e8=1
+l18
+L14
+VCQ<knkJ2_e39_mTzMQO=62
+!s100 BLdK_49BM>UEHOSTo5F9?1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Econtrolunit_tb
+R0
+R1
+R2
+R3
+R4
+R5
+l0
+L69
+VN`^C@]:_<Odb[bU5z3BPz1
+!s100 5[f4j>OCP==^Sn<:BBBCO2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Atb_architecture
+R1
+R2
+DEx4 work 14 controlunit_tb 0 22 N`^C@]:_<Odb[bU5z3BPz1
+l96
+L72
+VGAAfADlTRSdl^li=0dTHO1
+!s100 nM27O:Vla]YD@0RZW;ZfT2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Embi5153
+Z13 w1546871136
+R1
+R2
+R3
+Z14 8P:/workspace/MBI5153/MBI5153.vhd
+Z15 FP:/workspace/MBI5153/MBI5153.vhd
+l0
+L4
+VaLKoNWkREeYMK0UQW^CHg1
+!s100 Wn`<6_LJe>k[D3o:TAVfO3
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|P:/workspace/MBI5153/MBI5153.vhd|
+Z17 !s107 P:/workspace/MBI5153/MBI5153.vhd|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 7 mbi5153 0 22 aLKoNWkREeYMK0UQW^CHg1
+l69
+L31
+VEf;j4@?QhFJICjlIbPnz?2
+!s100 8N?QkbIBo_BcPk7B5E;Y]0
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Esram
+w1546871120
+R1
+R2
+R3
+8P:/workspace/MBI5153/SRAM.vhd
+FP:/workspace/MBI5153/SRAM.vhd
+l0
+L4
+V7>QC^ZQVV7En2Sg7TRTIb3
+!s100 TNh@^a8bE>T0`Ib63P1XW3
+R6
+32
+!s110 1546874148
+!i10b 1
+!s108 1546874148.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|P:/workspace/MBI5153/SRAM.vhd|
+!s107 P:/workspace/MBI5153/SRAM.vhd|
+!i113 1
+R11
+R12

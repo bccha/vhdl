@@ -1,0 +1,26 @@
+P:/workspace/MBI5153/ControlUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none P:/workspace/MBI5153/ControlUnit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ControlUnit
+-- Compiling architecture rtl of ControlUnit
+-- Compiling entity ControlUnit_TB
+-- Compiling architecture TB_ARCHITECTURE of ControlUnit_TB
+
+} {} {}} P:/workspace/MBI5153/MBI5153.vhd {1 {vcom -work work -2002 -explicit -stats=none P:/workspace/MBI5153/MBI5153.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MBI5153
+-- Compiling architecture rtl of MBI5153
+
+} {} {}} P:/workspace/MBI5153/SRAM.vhd {1 {vcom -work work -2002 -explicit -stats=none P:/workspace/MBI5153/SRAM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SRAM
+
+} {} {}}
